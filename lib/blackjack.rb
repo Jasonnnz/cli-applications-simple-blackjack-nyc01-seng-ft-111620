@@ -65,7 +65,7 @@ end
 def runner
   # code runner here
   welcome
-  initial_round
+  card_total = initial_round
   prompt_user
   get_user_input
   while card_total < 21
