@@ -32,9 +32,9 @@ def initial_round
   # code #initial_round here
   a = deal_card
   b = deal_card
-  sum = a + b
-  display_card_total(sum)
-  sum
+  card_total = a + b
+  display_card_total(card_total)
+  card_total
 end
 
 def hit?(card_total)
@@ -65,7 +65,8 @@ end
 def runner
   # code runner here
   welcome
-  card_total = initial_round
+  initial_round
+  hit?(card_total)
   while card_total < 21
     card_total = hit?(card_total)
     card_total = display_card_total(card_total)
