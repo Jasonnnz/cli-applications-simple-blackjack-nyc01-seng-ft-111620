@@ -52,6 +52,7 @@ def hit?(card_total)
     card = deal_card
     deal_card
     card_total += card
+  end
 end
 
 def invalid_command
