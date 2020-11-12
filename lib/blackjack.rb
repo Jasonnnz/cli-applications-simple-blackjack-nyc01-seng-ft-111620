@@ -30,7 +30,11 @@ end
 
 def initial_round
   # code #initial_round here
-  sum = rand(1..11) + rand(1..11)
+  a = deal_card
+  a
+  b = deal_card
+  b
+  sum = a + b
   display_card_total(sum)
 end
 
