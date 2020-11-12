@@ -32,7 +32,7 @@ def initial_round(card_total)
   # code #initial_round here
   deal_card
   deal_card
-  display_card_total(card_total)
+  display_card_total(deal_card + deal_card)
 end
 
 def hit?
